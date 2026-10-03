@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaaS Boilerplate | Built by Akanksha Sharma</title>
+    <title>SaaS Boilerplate</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -49,29 +49,22 @@
 <body class="selection:bg-black selection:text-white pb-24">
 
     <!-- NAVIGATION -->
-    <nav class="max-w-[1400px] mx-auto px-6 py-6 flex justify-between items-center bg-white z-50">
-        <div class="font-black text-2xl uppercase tracking-tighter">
-            Boilerplate
-        </div>
-        
-        <!-- Center subtle line (architectural detail) -->
-        <div class="hidden md:block w-12 border-t-2 border-black"></div>
-        
-        <div class="flex gap-8 text-xs font-bold uppercase tracking-widest">
-            <a href="#about" class="hover:text-gray-500 transition-colors">About</a>
-            <a href="#standard" class="hover:text-gray-500 transition-colors">Standard</a>
-            <a href="#premium" class="hover:text-gray-500 transition-colors">Premium</a>
+    <nav class="max-w-[1400px] mx-auto px-6 py-8 flex justify-center items-center bg-white z-50">
+        <div class="flex gap-10 text-sm font-bold uppercase tracking-widest text-gray-800">
+            <a href="#about" class="hover:text-black transition-colors">About</a>
+            <a href="#standard" class="hover:text-black transition-colors">Standard</a>
+            <a href="#premium" class="hover:text-black transition-colors">Premium</a>
         </div>
     </nav>
 
     <!-- 1. HERO SECTION -->
-    <section class="max-w-[1400px] mx-auto px-6 pt-12 pb-10 flex flex-col justify-center">
+    <section class="max-w-[1400px] mx-auto px-6 pt-6 pb-10 flex flex-col justify-center">
         <h1 class="hero-title font-black uppercase mb-8 text-center md:text-left">
             SAAS<br>BOILER<span class="tracking-tight">PLATE</span>
         </h1>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 thin-border-t pt-8 text-sm">
-            <div class="uppercase tracking-widest text-gray-400 text-xs">
+            <div class="uppercase tracking-widest text-gray-600 font-semibold text-sm">
                 [ Overview ]
             </div>
             <div class="md:col-span-2 font-medium text-lg lg:text-xl leading-relaxed max-w-2xl">
@@ -80,62 +73,70 @@
         </div>
     </section>
 
-    <!-- 2. BUILT BY / ABOUT SECTION -->
+    <!-- 2. ABOUT SECTION -->
     <section id="about" class="max-w-[1400px] mx-auto px-6 py-16">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-            <div class="lg:col-span-3 text-xs uppercase tracking-widest text-gray-400">
+            <div class="lg:col-span-3 text-sm font-semibold uppercase tracking-widest text-gray-600">
                 [ A few words about the creator ]
             </div>
             <div class="lg:col-span-5 text-lg font-medium leading-relaxed text-gray-800">
                 My mission is to help developers bypass the boring infrastructure setup and immediately start building features that matter. By unifying modern stacks like Next.js, FastAPI, and Stripe, we make scalable architecture accessible.
             </div>
             
-            <!-- Dark intro box resembling the reference image -->
+            <!-- Dark intro box -->
             <div class="lg:col-span-4 bg-off-black text-white p-8 flex items-center gap-6 shadow-2xl">
                 <div class="w-16 h-16 bg-gray-200 rounded-full overflow-hidden shrink-0 flex items-center justify-center">
                     <span class="text-black font-black text-2xl">A</span>
                 </div>
                 <div>
                     <h3 class="font-bold text-xl mb-1">Hi, I'm Akanksha!</h3>
-                    <p class="text-xs text-gray-400 uppercase tracking-widest">Built by Akanksha Sharma</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. ARCHITECTURAL FEATURES (List style from image) -->
+    <!-- 3. ARCHITECTURAL FEATURES -->
     <section class="max-w-[1400px] mx-auto px-6 py-12">
         <div class="grid grid-cols-1 lg:grid-cols-12 thin-border-t py-6 hover:bg-gray-50 transition-colors">
-            <div class="lg:col-span-2 text-xs text-gray-400 mb-2 lg:mb-0">[01]</div>
+            <div class="lg:col-span-2 text-sm font-semibold text-gray-600 mb-2 lg:mb-0">[01]</div>
             <div class="lg:col-span-3 font-bold uppercase tracking-wider mb-2 lg:mb-0">Frontend</div>
-            <div class="lg:col-span-7 text-sm text-gray-600 font-medium">Fast, SEO-optimized Next.js App Router & Tailwind CSS layout.</div>
+            <div class="lg:col-span-7 text-base text-gray-800 font-medium">Fast, SEO-optimized Next.js App Router & Tailwind CSS layout.</div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-12 thin-border-t py-6 hover:bg-gray-50 transition-colors">
-            <div class="lg:col-span-2 text-xs text-gray-400 mb-2 lg:mb-0">[02]</div>
+            <div class="lg:col-span-2 text-sm font-semibold text-gray-600 mb-2 lg:mb-0">[02]</div>
             <div class="lg:col-span-3 font-bold uppercase tracking-wider mb-2 lg:mb-0">Backend</div>
-            <div class="lg:col-span-7 text-sm text-gray-600 font-medium">Blazing fast FastAPI written in Python with robust architecture.</div>
+            <div class="lg:col-span-7 text-base text-gray-800 font-medium">Blazing fast FastAPI written in Python with robust architecture.</div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-12 thin-border-t py-6 hover:bg-gray-50 transition-colors">
-            <div class="lg:col-span-2 text-xs text-gray-400 mb-2 lg:mb-0">[03]</div>
+            <div class="lg:col-span-2 text-sm font-semibold text-gray-600 mb-2 lg:mb-0">[03]</div>
             <div class="lg:col-span-3 font-bold uppercase tracking-wider mb-2 lg:mb-0">Infrastructure</div>
-            <div class="lg:col-span-7 text-sm text-gray-600 font-medium">PostgreSQL database out of the box, ready for scale.</div>
+            <div class="lg:col-span-7 text-base text-gray-800 font-medium">PostgreSQL database out of the box, ready for scale.</div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-12 thin-border-y py-6 hover:bg-gray-50 transition-colors">
-            <div class="lg:col-span-2 text-xs text-gray-400 mb-2 lg:mb-0">[04]</div>
+            <div class="lg:col-span-2 text-sm font-semibold text-gray-600 mb-2 lg:mb-0">[04]</div>
             <div class="lg:col-span-3 font-bold uppercase tracking-wider mb-2 lg:mb-0">Payments & Auth</div>
-            <div class="lg:col-span-7 text-sm text-gray-600 font-medium">Pre-configured Stripe Webhooks & secure JWT Authentication.</div>
+            <div class="lg:col-span-7 text-base text-gray-800 font-medium">Pre-configured Stripe Webhooks & secure JWT Authentication.</div>
         </div>
     </section>
 
-    <!-- 4. STANDARD BOILERPLATE (Video Demo + GitHub) -->
+    <!-- 4. STANDARD BOILERPLATE -->
     <section id="standard" class="max-w-[1400px] mx-auto px-6 pt-24">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
-            <div class="text-xs uppercase tracking-widest text-gray-400">[ Featured Project ]</div>
-            <div class="max-w-md text-lg font-medium leading-tight">Everything you need for a core SaaS. Launch standard applications in minutes.</div>
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-8">
+            <div class="text-sm font-semibold uppercase tracking-widest text-gray-600 whitespace-nowrap">[ Standard Project ]</div>
+            <div class="max-w-xl">
+                <p class="text-xl font-bold leading-tight mb-4">Everything you need for a core SaaS. Launch standard applications in minutes.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-medium text-gray-700">
+                    <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> Next.js Frontend</li>
+                    <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> FastAPI Backend</li>
+                    <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> Stripe Billing Integration</li>
+                    <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> Secure JWT Auth</li>
+                    <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> PostgreSQL Setup</li>
+                </ul>
+            </div>
         </div>
         
         <!-- Video Container -->
-        <div class="bg-gray-100 aspect-video relative group overflow-hidden border border-gray-200">
+        <div class="bg-gray-100 aspect-video relative group overflow-hidden border border-gray-200 shadow-lg">
             <video controls class="w-full h-full object-cover">
                 <source src="assets/video_standard.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -144,22 +145,30 @@
             <!-- Floating GitHub Link -->
             <a href="https://github.com/Ashteq/Standard-Boilerplate" target="_blank" class="absolute bottom-0 right-0 bg-off-black text-white px-8 py-5 flex items-center gap-4 hover:bg-black transition-all">
                 <div>
-                    <div class="text-[10px] text-gray-400 uppercase tracking-widest mb-1">Source Code</div>
-                    <div class="font-bold tracking-wide">Standard Boilerplate ↗</div>
+                    <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Source Code</div>
+                    <div class="font-bold tracking-wide text-lg">Standard Boilerplate ↗</div>
                 </div>
             </a>
         </div>
     </section>
 
-    <!-- 5. PREMIUM BOILERPLATE (Video Demo + GitHub) -->
+    <!-- 5. PREMIUM BOILERPLATE -->
     <section id="premium" class="max-w-[1400px] mx-auto px-6 pt-24">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
-            <div class="text-xs uppercase tracking-widest text-gray-400">[ AI Integration ]</div>
-            <div class="max-w-md text-lg font-medium leading-tight">Supercharged with AI integrations. Includes PGVector database setup and OpenAI APIs.</div>
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-8">
+            <div class="text-sm font-semibold uppercase tracking-widest text-gray-600 whitespace-nowrap">[ Premium AI Project ]</div>
+            <div class="max-w-xl">
+                <p class="text-xl font-bold leading-tight mb-4">Supercharged with AI integrations. Build next-generation intelligent applications.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-medium text-gray-700">
+                    <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> Everything in Standard</li>
+                    <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> PGVector Database</li>
+                    <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> OpenAI API Integrations</li>
+                    <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> AI Chat UI Components</li>
+                </ul>
+            </div>
         </div>
         
         <!-- Video Container -->
-        <div class="bg-gray-100 aspect-video relative group overflow-hidden border border-gray-200">
+        <div class="bg-gray-100 aspect-video relative group overflow-hidden border border-gray-200 shadow-lg">
             <video controls class="w-full h-full object-cover">
                 <source src="assets/video_premium.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -168,8 +177,8 @@
             <!-- Floating GitHub Link -->
             <a href="https://github.com/Ashteq/premium-boilerplate" target="_blank" class="absolute bottom-0 right-0 bg-off-black text-white px-8 py-5 flex items-center gap-4 hover:bg-black transition-all">
                 <div>
-                    <div class="text-[10px] text-gray-400 uppercase tracking-widest mb-1">Source Code</div>
-                    <div class="font-bold tracking-wide">Premium Boilerplate ↗</div>
+                    <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Source Code</div>
+                    <div class="font-bold tracking-wide text-lg">Premium Boilerplate ↗</div>
                 </div>
             </a>
         </div>
@@ -179,12 +188,23 @@
     <section class="max-w-[1400px] mx-auto px-6 pt-32">
         <h2 class="text-2xl font-black uppercase tracking-tight mb-12 heavy-border-b pb-4 inline-block">Frequently Asked Questions</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4">
+            
+            <details class="group thin-border-b pb-6">
+                <summary class="font-bold text-lg flex justify-between items-center transition-colors">
+                    Is this a subscription?
+                    <span class="text-xl font-normal text-gray-400 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <div class="pt-4 text-gray-700 font-medium text-sm leading-relaxed">
+                    No, it's a one-time payment for full source code.
+                </div>
+            </details>
+
             <details class="group thin-border-b pb-6">
                 <summary class="font-bold text-lg flex justify-between items-center transition-colors">
                     Do I get the frontend and backend?
                     <span class="text-xl font-normal text-gray-400 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <div class="pt-4 text-gray-600 text-sm leading-relaxed">
+                <div class="pt-4 text-gray-700 font-medium text-sm leading-relaxed">
                     Yes, you get full access to both the Next.js and FastAPI codebases within the repositories.
                 </div>
             </details>
@@ -194,10 +214,11 @@
                     Can I use this for client work?
                     <span class="text-xl font-normal text-gray-400 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <div class="pt-4 text-gray-600 text-sm leading-relaxed">
-                    Absolutely. The architecture is designed to let you build unlimited client projects rapidly.
+                <div class="pt-4 text-gray-700 font-medium text-sm leading-relaxed">
+                    Yes, you can build unlimited client projects.
                 </div>
             </details>
+
         </div>
     </section>
 
