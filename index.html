@@ -52,8 +52,8 @@
     <nav class="max-w-[1400px] mx-auto px-6 py-8 flex justify-center items-center bg-white z-50">
         <div class="flex gap-10 text-sm font-bold uppercase tracking-widest text-gray-800">
             <a href="#about" class="hover:text-black transition-colors">About</a>
-            <a href="#standard" class="hover:text-black transition-colors">Standard</a>
-            <a href="#premium" class="hover:text-black transition-colors">Premium</a>
+            <a href="#tiers" class="hover:text-black transition-colors">Boilerplates</a>
+            <a href="#faq" class="hover:text-black transition-colors">FAQ</a>
         </div>
     </nav>
 
@@ -119,73 +119,61 @@
         </div>
     </section>
 
-    <!-- 4. STANDARD BOILERPLATE -->
-    <section id="standard" class="max-w-[1400px] mx-auto px-6 pt-24">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-8">
-            <div class="text-sm font-semibold uppercase tracking-widest text-gray-600 whitespace-nowrap">[ Standard Project ]</div>
-            <div class="max-w-xl">
-                <p class="text-xl font-bold leading-tight mb-4">Everything you need for a core SaaS. Launch standard applications in minutes.</p>
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-medium text-gray-700">
+    <!-- 4. BOILERPLATE TIERS & SHARED IMAGES -->
+    <section id="tiers" class="max-w-[1400px] mx-auto px-6 pt-24">
+        <!-- Text side-by-side -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-12">
+            
+            <!-- Standard -->
+            <div id="standard" class="flex flex-col">
+                <div class="text-sm font-semibold uppercase tracking-widest text-gray-600 mb-4">[ Standard Project ]</div>
+                <p class="text-xl font-bold leading-tight mb-6">Everything you need for a core SaaS. Launch standard applications in minutes.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-medium text-gray-700 mb-8 flex-grow">
                     <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> Next.js Frontend</li>
                     <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> FastAPI Backend</li>
                     <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> Stripe Billing Integration</li>
                     <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> Secure JWT Auth</li>
                     <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> PostgreSQL Setup</li>
                 </ul>
+                <a href="https://github.com/Ashteq/Standard-Boilerplate" target="_blank" class="bg-gray-100 border border-gray-300 text-black px-6 py-4 inline-flex items-center justify-between hover:bg-gray-200 transition-all w-full">
+                    <span class="font-bold tracking-wide">Standard Source Code</span>
+                    <span>↗</span>
+                </a>
             </div>
-        </div>
-        
-        <!-- Video Container -->
-        <div class="bg-gray-100 aspect-video relative group overflow-hidden border border-gray-200 shadow-lg">
-            <video controls class="w-full h-full object-cover">
-                <source src="assets/video_standard.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <!-- Floating GitHub Link -->
-            <a href="https://github.com/Ashteq/Standard-Boilerplate" target="_blank" class="absolute bottom-0 right-0 bg-off-black text-white px-8 py-5 flex items-center gap-4 hover:bg-black transition-all">
-                <div>
-                    <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Source Code</div>
-                    <div class="font-bold tracking-wide text-lg">Standard Boilerplate ↗</div>
-                </div>
-            </a>
-        </div>
-    </section>
 
-    <!-- 5. PREMIUM BOILERPLATE -->
-    <section id="premium" class="max-w-[1400px] mx-auto px-6 pt-24">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-8">
-            <div class="text-sm font-semibold uppercase tracking-widest text-gray-600 whitespace-nowrap">[ Premium AI Project ]</div>
-            <div class="max-w-xl">
-                <p class="text-xl font-bold leading-tight mb-4">Supercharged with AI integrations. Build next-generation intelligent applications.</p>
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-medium text-gray-700">
+            <!-- Premium -->
+            <div id="premium" class="flex flex-col">
+                <div class="text-sm font-semibold uppercase tracking-widest text-gray-600 mb-4">[ Premium AI Project ]</div>
+                <p class="text-xl font-bold leading-tight mb-6">Supercharged with AI integrations. Build next-generation intelligent applications.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-medium text-gray-700 mb-8 flex-grow">
                     <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> Everything in Standard</li>
                     <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> PGVector Database</li>
                     <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> OpenAI API Integrations</li>
                     <li class="flex items-center gap-2"><span class="text-black font-bold">✓</span> AI Chat UI Components</li>
                 </ul>
+                <a href="https://github.com/Ashteq/premium-boilerplate" target="_blank" class="bg-off-black text-white px-6 py-4 inline-flex items-center justify-between hover:bg-black transition-all w-full shadow-lg">
+                    <span class="font-bold tracking-wide">Premium Source Code</span>
+                    <span>↗</span>
+                </a>
             </div>
+
         </div>
         
-        <!-- Video Container -->
-        <div class="bg-gray-100 aspect-video relative group overflow-hidden border border-gray-200 shadow-lg">
-            <video controls class="w-full h-full object-cover">
-                <source src="assets/video_premium.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <!-- Floating GitHub Link -->
-            <a href="https://github.com/Ashteq/premium-boilerplate" target="_blank" class="absolute bottom-0 right-0 bg-off-black text-white px-8 py-5 flex items-center gap-4 hover:bg-black transition-all">
-                <div>
-                    <div class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Source Code</div>
-                    <div class="font-bold tracking-wide text-lg">Premium Boilerplate ↗</div>
-                </div>
-            </a>
+        <!-- Shared Images Gallery -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-100 aspect-video relative overflow-hidden border border-gray-200 shadow-lg group">
+                <!-- Replace with your actual UI screenshot URL -->
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200" alt="Code Editor Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out">
+            </div>
+            <div class="bg-gray-100 aspect-video relative overflow-hidden border border-gray-200 shadow-lg group">
+                <!-- Replace with your actual AI component screenshot URL -->
+                <img src="https://images.unsplash.com/photo-1618477247222-ac60c6285740?auto=format&fit=crop&q=80&w=1200" alt="UI Design Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out">
+            </div>
         </div>
     </section>
 
-    <!-- 6. MINIMALIST FAQ -->
-    <section class="max-w-[1400px] mx-auto px-6 pt-32">
+    <!-- 5. MINIMALIST FAQ -->
+    <section id="faq" class="max-w-[1400px] mx-auto px-6 pt-32">
         <h2 class="text-2xl font-black uppercase tracking-tight mb-12 heavy-border-b pb-4 inline-block">Frequently Asked Questions</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-4">
             
